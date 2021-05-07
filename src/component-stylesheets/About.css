@@ -1,0 +1,11 @@
+.about {
+    display: block;
+    margin: 1rem;
+    background: rgb(138, 179, 246);
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.about p {
+    color: white;
+}

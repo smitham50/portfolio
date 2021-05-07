@@ -1,0 +1,19 @@
+.navbar {
+    display: flex;
+    background: rgb(25, 157, 183);
+    justify-content: space-evenly;
+    height: 50px;
+    padding: 1rem;
+}
+
+.nav-link {
+    padding: .8rem;
+}
+
+.nav-link > * {
+    color: white;
+    text-decoration: none;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1.2rem;
+}
+

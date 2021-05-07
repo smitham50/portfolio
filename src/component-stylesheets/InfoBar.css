@@ -1,0 +1,21 @@
+.infobar {
+    padding: 1rem;
+    margin: 1rem;
+    background: rgb(246, 175, 94);
+    border-radius: 10px;
+    display: flex;
+}
+
+.infobar > * {
+    margin: 1rem;
+    color: white;
+}
+
+.infobar img {
+    width: 220px;
+    border-radius: 20px;
+}
+
+.infobar .contact-icon {
+    width: 40px;
+}
