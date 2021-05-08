@@ -6,6 +6,7 @@ import './component-stylesheets/NavBar.css';
 import './component-stylesheets/App.css';
 import './component-stylesheets/About.css';
 import './component-stylesheets/InfoBar.css';
+import './component-stylesheets/Projects.css';
 
 function App() {
   return (

@@ -1,7 +1,7 @@
 .infobar {
     padding: 1rem;
     margin: 1rem;
-    background: rgb(246, 175, 94);
+    background: #ffc481;
     border-radius: 10px;
     display: flex;
 }
@@ -11,11 +11,15 @@
     color: white;
 }
 
+.contact {
+    width: 30%;
+}
+
 .infobar img {
-    width: 220px;
+    width: 100%;
     border-radius: 20px;
 }
 
 .infobar .contact-icon {
-    width: 40px;
+    width: 2rem;
 }
