@@ -34,13 +34,10 @@ const Project = (props) => {
                 </div>
                 <div className="project-info">
                     <p className="description">{description}</p>
-                    <div className="built-with">
-                        <p style={{width: "30%"}}>Built with: </p>
-                        <ul>
-                            { renderListItems() }
-                        </ul>
-                    </div>
-                    
+                    <p style={{width: "30%"}}>Built with: </p>
+                    <ul>
+                        { renderListItems() }
+                    </ul>
                 </div>
             </div>
         </div>

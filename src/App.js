@@ -7,6 +7,8 @@ import './component-stylesheets/App.css';
 import './component-stylesheets/About.css';
 import './component-stylesheets/InfoBar.css';
 import './component-stylesheets/Projects.css';
+import './component-stylesheets/Contact.css';
+import './component-stylesheets/Project.css';
 
 function App() {
   return (

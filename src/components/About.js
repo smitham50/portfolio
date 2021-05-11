@@ -6,7 +6,7 @@ const About = () => {
     return (
         <div className="about" ref={aboutRef}>
             <h1>
-                Fullstack web developer, MERN and Ruby on Rails
+                Fullstack Web Developer, React, Ruby on Rails, MERN
             </h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi rem sapiente temporibus libero pariatur porro harum iusto tempore, architecto quasi dolores quisquam recusandae totam fugit tenetur, similique non! Eaque, consequatur.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi rem sapiente temporibus libero pariatur porro harum iusto tempore, architecto quasi dolores quisquam recusandae totam fugit tenetur, similique non! Eaque, consequatur.</p>
