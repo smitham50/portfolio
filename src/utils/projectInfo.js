@@ -41,7 +41,7 @@ const projectInfo = [
         spellingBee: {
             name: "Spelling Bee",
             image: "spellingbee.png",
-            image2: "0",
+            image2: "",
             description: "A blatant ripoff of the New York Times' popular wordgame",
             builtWith: [
                 "JavaScript",

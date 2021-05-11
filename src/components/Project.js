@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import '../component-stylesheets/Project.css';
 
 const Project = (props) => {
     const {
