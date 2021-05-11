@@ -5,6 +5,7 @@ const projectInfo = [
             image: "dominion.png",
             image2: "",
             description: "Pass and play deckbuilding card game",
+            repo: "https://github.com/smitham50/dominion-frontend",
             builtWith: [
                 "React",
                 "Ruby on Rails",
@@ -22,6 +23,7 @@ const projectInfo = [
             image: "trailblaze.png",
             image2: "trailblaze2.png",
             description: "Trail finding web application",
+            repo: "https://github.com/smitham50/trailblaze-frontend",
             builtWith: [
                 "React",
                 "Ruby on Rails",
@@ -43,6 +45,7 @@ const projectInfo = [
             image: "spellingbee.png",
             image2: "",
             description: "A blatant ripoff of the New York Times' popular wordgame",
+            repo: "https://github.com/smitham50/spelling_bee",
             builtWith: [
                 "JavaScript",
                 "HTML",
@@ -57,6 +60,7 @@ const projectInfo = [
             image: "wuht2.png",
             image2: "",
             description: "NPM package that enables you to search MDN JavaScript keyword documentation in the command line. Install: npm i wuht -g",
+            repo: "https://github.com/smitham50/wuht",
             builtWith: [
                 "Node.js",
                 "MDN Documentation"
@@ -69,6 +73,7 @@ const projectInfo = [
             image: "yelpcamp.png",
             image2: "yelpcamp2.png",
             description: "Final project from Colt Steele's Web Developer Bootcamp",
+            repo: "https://github.com/smitham50/YelpCamp",
             builtWith: [
                 "Node.js",
                 "Express.js",

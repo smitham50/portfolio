@@ -7,7 +7,8 @@ const Project = (props) => {
         name,
         image,
         image2,
-        description
+        description,
+        repo
     } = props;
 
     const renderListItems = () => {
@@ -35,10 +36,11 @@ const Project = (props) => {
                 </div>
                 <div className="project-info">
                     <p className="description">{description}</p>
-                    <p style={{width: "30%"}}>Built with: </p>
+                    <p style={{textDecoration: "underline"}}>Built with</p>
                     <ul>
                         { renderListItems() }
                     </ul>
+                    <a href={repo}><img src="icons8-github.svg" /></a>
                 </div>
             </div>
         </div>

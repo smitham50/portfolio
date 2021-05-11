@@ -12,6 +12,7 @@ const Projects = (props) => {
                 image,
                 image2,
                 description,
+                repo,
                 builtWith
             } = project[Object.keys(project)];
 
@@ -21,6 +22,7 @@ const Projects = (props) => {
                     image={image}
                     image2={image2}
                     description={description}
+                    repo={repo}
                     builtWith={builtWith}
                 />
             )

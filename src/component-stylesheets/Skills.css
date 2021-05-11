@@ -17,7 +17,7 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 800px;
+    height: 900px;
 }
 
 .container {
@@ -47,6 +47,8 @@
 .node {width: 70%}
 .exp {width: 65%}
 .git {width: 70%}
+.go {width: 50%}
+.pyth {width: 65%}
 
 @media screen and (max-width: 768px) {
     .skillbars {

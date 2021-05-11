@@ -14,9 +14,6 @@ const NavBar = (props) => {
             <Link to='/projects'>
                 <p>{"Projects"}</p>
             </Link>
-            <Link to='/learning'>
-                <p>{"Learning"}</p>
-            </Link>
         </nav>
     );
 };

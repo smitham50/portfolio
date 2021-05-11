@@ -5,9 +5,7 @@ const Skills = () => {
 
     return (
         <div className="skills-container">
-            <div className="skills-heading">
-                <h1>Skills</h1>
-            </div>
+            
             <div className="skillbars">
                 <p>React</p>
                 <div class="container">
@@ -40,6 +38,14 @@ const Skills = () => {
                 <p>ExpressJS</p>
                 <div class="container">
                     <div class="skills exp">65%</div>
+                </div>
+                <p>Go</p>
+                <div class="container">
+                    <div class="skills go">50%</div>
+                </div>
+                <p>Python</p>
+                <div class="container">
+                    <div class="skills pyth">65%</div>
                 </div>
                 <p>Docker</p>
                 <div class="container">
