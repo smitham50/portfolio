@@ -34,11 +34,11 @@
 
 .project-info {
     width: 30%;
-    background: #18181914;
+    background: #cccccc14;
     border-radius: 10px;
 }
 
-.project-info:nth-of-type(2N) {
+.project:nth-of-type(2N) .project-info {
     background: #a5a5a514;
 }
 
