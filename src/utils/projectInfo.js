@@ -54,8 +54,8 @@ const projectInfo = [
     {
         wuht: {
             name: "wuht",
-            image: "wuht.png",
-            image2: "wuht2.png",
+            image: "wuht2.png",
+            image2: "",
             description: "NPM package that enables you to search MDN JavaScript keyword documentation in the command line. Install: npm i wuht -g",
             builtWith: [
                 "Node.js",
