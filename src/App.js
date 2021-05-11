@@ -1,7 +1,8 @@
 import React from 'react';
+import { Route, Switch } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import InfoBar from './components/InfoBar';
-import Content from './components/Content';
+import Projects from './components/Projects';
 import Skills from './components/Skills';
 import './component-stylesheets/App.css';
 
@@ -11,11 +12,21 @@ function App() {
       <header>
         <NavBar />
       </header>
-        <main>
-          <InfoBar />
-          <Skills />
-          <Content />
-        </main>
+      <main>
+        <Switch>
+          <Route exact path='/'>
+          </Route>
+          <Route path='/about'>
+            <InfoBar />
+          </Route>
+          <Route path='/skills'>
+            <Skills />
+          </Route>
+          <Route path='/projects'>
+            <Projects />
+          </Route>
+        </Switch>
+      </main>
     </div>
   );
 }
