@@ -5,6 +5,7 @@ import NavBar from './components/NavBar';
 import InfoBar from './components/InfoBar';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
+import Landing from './components/Landing';
 import './component-stylesheets/App.css';
 
 function App() {
@@ -24,7 +25,7 @@ function App() {
           >
             <Switch location={location}>
               <Route exact path='/'>
-                <Redirect to='/about' />
+                <Landing />
               </Route>
               <Route path='/about'>
                 <InfoBar />

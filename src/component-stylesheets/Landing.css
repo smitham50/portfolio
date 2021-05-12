@@ -1,0 +1,18 @@
+.landing {
+    background: #11111399;
+    color: white;
+    height: 87vh;
+    position: relative;
+}
+
+.landing > * {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.landing h1, h3 {
+    margin: 1rem;
+}
