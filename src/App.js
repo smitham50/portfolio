@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch, useLocation } from 'react-router-dom';
+import { Route, Switch, useLocation, Redirect } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import NavBar from './components/NavBar';
 import InfoBar from './components/InfoBar';
@@ -24,6 +24,7 @@ function App() {
           >
             <Switch location={location}>
               <Route exact path='/'>
+                <Redirect to='/about' />
               </Route>
               <Route path='/about'>
                 <InfoBar />
