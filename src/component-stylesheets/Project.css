@@ -56,6 +56,19 @@
     margin-bottom: 2rem;
 }
 
+.project-link {
+    margin: .5rem;
+}
+
+.project-link img {
+    width: 30px;
+    transition: 300ms;
+}
+
+.project-link img:hover {
+    transform: scale(1.1);
+}
+
 @media screen and (max-width: 768px) {
     .project-body {
         flex-direction: column;

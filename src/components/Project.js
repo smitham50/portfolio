@@ -8,7 +8,10 @@ const Project = (props) => {
         image,
         image2,
         description,
-        repo
+        repo,
+        url,
+        gitHubIcon,
+        folderIcon
     } = props;
 
     const renderListItems = () => {
@@ -40,7 +43,12 @@ const Project = (props) => {
                     <ul>
                         { renderListItems() }
                     </ul>
-                    <a href={repo}><img src="icons8-github.svg" /></a>
+                    <a href={repo} className="project-link"><img src={gitHubIcon} /></a>
+                    {
+                        url
+                        ? <a href={url} className="project-link"><img src={folderIcon} /></a>
+                        : null
+                    }
                 </div>
             </div>
         </div>

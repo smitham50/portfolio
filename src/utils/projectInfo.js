@@ -6,6 +6,7 @@ const projectInfo = [
             image2: "",
             description: "Pass and play deckbuilding card game",
             repo: "https://github.com/smitham50/dominion-frontend",
+            url: "https://smitham50.github.io/dominion-frontend/",
             builtWith: [
                 "React",
                 "Ruby on Rails",
@@ -24,6 +25,7 @@ const projectInfo = [
             image2: "trailblaze2.png",
             description: "Trail finding web application",
             repo: "https://github.com/smitham50/trailblaze-frontend",
+            url: "https://smitham50.github.io/trailblaze-frontend/",
             builtWith: [
                 "React",
                 "Ruby on Rails",
@@ -46,6 +48,7 @@ const projectInfo = [
             image2: "",
             description: "A blatant ripoff of the New York Times' popular wordgame",
             repo: "https://github.com/smitham50/spelling_bee",
+            url: "",
             builtWith: [
                 "JavaScript",
                 "HTML",
@@ -61,6 +64,7 @@ const projectInfo = [
             image2: "",
             description: "NPM package that enables you to search MDN JavaScript keyword documentation in the command line. Install: npm i wuht -g",
             repo: "https://github.com/smitham50/wuht",
+            url: "",
             builtWith: [
                 "Node.js",
                 "MDN Documentation"
@@ -74,6 +78,7 @@ const projectInfo = [
             image2: "yelpcamp2.png",
             description: "Final project from Colt Steele's Web Developer Bootcamp",
             repo: "https://github.com/smitham50/YelpCamp",
+            url: "https://infinite-earth-91751.herokuapp.com/",
             builtWith: [
                 "Node.js",
                 "Express.js",
@@ -91,6 +96,4 @@ const projectInfo = [
     }
 ]
 
-
 export default projectInfo;
-// export { dominion, trailblaze, spellingBee, wuht, yelpCamp};
