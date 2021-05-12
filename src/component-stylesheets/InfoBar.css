@@ -9,7 +9,7 @@
 
 .infobar > * {
     margin: 1rem;
-    color: black;
+    color: #3f3e42;
 }
 
 .contact {
@@ -29,6 +29,7 @@
     .infobar {
         flex-direction: column;
         padding: 0;
+        height: auto;
     }
 
     .contact {

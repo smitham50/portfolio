@@ -6,7 +6,7 @@ import '../component-stylesheets/Projects.css';
 const Projects = (props) => {
 
     const renderProjects = () => {
-        return projectInfo.map(project => {
+        return projectInfo.map((project, idx) => {
             const {
                 name,
                 image,
@@ -18,6 +18,7 @@ const Projects = (props) => {
 
             return (
                 <Project
+                    key={idx}
                     name={name}
                     image={image}
                     image2={image2}

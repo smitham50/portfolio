@@ -10,15 +10,6 @@ a:-webkit-any-link {
     color: white;
     text-decoration: none;
     font-size: 1.4rem;
-}
-
-.nav-link {
-    padding: .8rem;
-}
-
-.nav-link > * {
-    color: white;
-    text-decoration: none;
-    font-size: 1.4rem;
+    transition: .3s;
 }
 
