@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../component-stylesheets/NavBar.css';
 
-const NavBar = (props) => {
+const NavBar = () => {
     return (
         <nav className="navbar">
             <Link to='/about'>

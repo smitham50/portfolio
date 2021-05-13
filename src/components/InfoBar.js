@@ -3,7 +3,7 @@ import About from './About';
 import Contact from './Contact';
 import '../component-stylesheets/InfoBar.css';
 
-const InfoBar = (props) => {
+const InfoBar = () => {
     return (
         <div className="infobar">
             <Contact />

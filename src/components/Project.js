@@ -16,7 +16,6 @@ const Project = (props) => {
 
     const renderListItems = () => {
         return builtWith.map(listItem => {
-            console.log(listItem)
             return <li>{listItem}</li>
         });
     }
@@ -30,8 +29,8 @@ const Project = (props) => {
                         image2
                         ?  
                         <Fragment>  
-                            <img src={image} alt="" />
-                            <img src={image2} alt="" />
+                            <img src={process.env.PUBLIC_URL + image} alt="" />
+                            <img src={process.env.PUBLIC_URL + image2} alt="" />
                         </Fragment>
                         :
                         <img src={image}  alt="" />
@@ -43,10 +42,10 @@ const Project = (props) => {
                     <ul>
                         { renderListItems() }
                     </ul>
-                    <a href={repo} className="project-link"><img src={gitHubIcon} alt="" /></a>
+                    <a href={repo} className="project-link"><img src={process.env.PUBLIC_URL + gitHubIcon} alt="" /></a>
                     {
                         url
-                        ? <a href={url} className="project-link"><img src={folderIcon} alt="" /></a>
+                        ? <a href={url} className="project-link"><img src={process.env.PUBLIC_URL + folderIcon} alt="" /></a>
                         : null
                     }
                 </div>
