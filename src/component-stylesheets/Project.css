@@ -85,6 +85,8 @@
 
     .project-image-container img {
         width: auto;
+        height: auto;
+        aspect-ratio: attr(width) / attr(height);
     }
 
     .project-info {
