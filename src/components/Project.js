@@ -43,10 +43,10 @@ const Project = (props) => {
                     <ul>
                         { renderListItems() }
                     </ul>
-                    <a href={repo} className="project-link"><img src={gitHubIcon} /></a>
+                    <a href={repo} className="project-link"><img src={gitHubIcon} alt="" /></a>
                     {
                         url
-                        ? <a href={url} className="project-link"><img src={folderIcon} /></a>
+                        ? <a href={url} className="project-link"><img src={folderIcon} alt="" /></a>
                         : null
                     }
                 </div>

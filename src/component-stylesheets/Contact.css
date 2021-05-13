@@ -1,3 +1,11 @@
-.contact a {
+.contact-link {
     margin: 0 .15rem;
+}
+
+.contact-link img {
+    transition: 300ms;
+}
+
+.contact-link img:hover {
+    transform: scale(1.1);
 }

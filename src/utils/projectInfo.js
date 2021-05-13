@@ -58,20 +58,6 @@ const projectInfo = [
         }
     },
     {
-        wuht: {
-            name: "wuht",
-            image: "wuht2.png",
-            image2: "",
-            description: "NPM package that enables you to search MDN JavaScript keyword documentation in the command line. Install: npm i wuht -g",
-            repo: "https://github.com/smitham50/wuht",
-            url: "",
-            builtWith: [
-                "Node.js",
-                "MDN Documentation"
-            ]
-        }
-    },
-    {
         yelpCamp: {
             name: "YelpCamp",
             image: "yelpcamp.png",
@@ -91,6 +77,20 @@ const projectInfo = [
                 "Mapbox API",
                 "Heroku",
                 "MongoDB Atlas"
+            ]
+        }
+    },
+    {
+        wuht: {
+            name: "wuht",
+            image: "wuht2.png",
+            image2: "",
+            description: "NPM package that enables you to search MDN JavaScript keyword documentation in the command line. Install: npm i wuht -g",
+            repo: "https://github.com/smitham50/wuht",
+            url: "",
+            builtWith: [
+                "Node.js",
+                "MDN Documentation"
             ]
         }
     }
