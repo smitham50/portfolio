@@ -33,7 +33,7 @@ const Project = (props) => {
                             <img src={process.env.PUBLIC_URL + image2} alt="" />
                         </Fragment>
                         :
-                        <img src={image}  alt="" />
+                        <img src={process.env.PUBLIC_URL + image}  alt="" />
                     }
                 </div>
                 <div className="project-info">
