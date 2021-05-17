@@ -48,7 +48,7 @@ const projectInfo = [
             image2: "",
             description: "A blatant ripoff of the New York Times' popular wordgame",
             repo: "https://github.com/smitham50/spelling_bee",
-            url: "",
+            url: "https://smitham50.github.io/spelling_bee/",
             builtWith: [
                 "JavaScript",
                 "HTML",
