@@ -41,14 +41,15 @@
 .css {width: 65%;}
 .js {width: 90%;}
 .ror {width: 80%}
-.mysql {width: 70%}
-.dock {width: 40%}
-.mongo {width: 55%}
-.node {width: 70%}
-.exp {width: 65%}
-.git {width: 70%}
-.go {width: 50%}
-.pyth {width: 65%}
+.mysql {width: 70%;}
+.dock {width: 40%;}
+.mongo {width: 55%;}
+.node {width: 70%;}
+.exp {width: 65%;}
+.git {width: 70%;}
+.go {width: 50%;}
+.pyth {width: 65%;}
+.next {width: 80%;}
 
 @media screen and (max-width: 768px) {
     .skillbars {

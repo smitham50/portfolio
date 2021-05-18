@@ -59,6 +59,10 @@ const Skills = () => {
                 <div class="container">
                     <div class="skills html">90%</div>
                 </div>
+                <p>NextJS</p>
+                <div class="container">
+                    <div class="skills next">80%</div>
+                </div>
             </div>
         </div>
     );
