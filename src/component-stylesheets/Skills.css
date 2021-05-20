@@ -23,7 +23,7 @@
 .container {
     width: 47%;
     background-color: #ddd;
-    border-radius: 10px;
+    border-radius: 50px;
     margin: 1rem;
 }
 
@@ -31,9 +31,10 @@
     text-align: right;
     padding-top: 10px;
     padding-bottom: 10px;
+    padding-right: 10px;
     color: white;
     background-color: #7e8a94;
-    border-radius: 10px;
+    border-radius: 50px;
 }
 
 .react {width: 90%}
