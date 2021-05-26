@@ -46,7 +46,7 @@ const projectInfo = [
             name: "Spelling Bee",
             image: "spellingbee.png",
             image2: "",
-            description: "A blatant ripoff of the New York Times' popular wordgame",
+            description: "Clone of the New York Times' popular wordgame",
             repo: "https://github.com/smitham50/spelling_bee",
             url: "https://smitham50.github.io/spelling_bee/",
             builtWith: [
