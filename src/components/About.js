@@ -8,6 +8,8 @@ const AboutContainer = styled.div`
     border-radius: 10px;
     padding: 0 1rem;
     padding-bottom: 4rem;
+    margin: 1rem;
+    color: #3f3e42;
 `;
 
 const P = styled.p`
