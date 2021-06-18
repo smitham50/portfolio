@@ -7,12 +7,44 @@ import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Landing from './components/Landing';
 import './component-stylesheets/App.css';
+import styled from 'styled-components';
+
+const AppContainer = styled.div`
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Mono", monospace;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  a:hover {
+    transform: scale(1.05);
+  }
+
+  .fade-enter {
+    opacity: 0;
+    z-index: 1;
+  }
+
+  .fade-enter .fade-enter-active {
+    opacity: 1;
+    transition: opacity 250ms ease-in;
+  }
+`;
 
 function App() {
   const location = useLocation();
 
   return (
-    <div className='App'>
+    <AppContainer>
       <header>
         <NavBar />
       </header>
@@ -40,7 +72,7 @@ function App() {
           </CSSTransition>
         </TransitionGroup>
       </main>
-    </div>
+    </AppContainer>
   );
 }
 
