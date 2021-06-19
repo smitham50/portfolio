@@ -6,8 +6,7 @@ const Nav = styled.nav`
     display: flex;
     background: #11111399;
     justify-content: space-around;
-    height: 6rem;
-    padding: 1rem;
+    padding: .5rem;
 
     & a:-webkit-any-link {
         color: white;
@@ -22,9 +21,6 @@ const NavBar = () => {
         <Nav>
             <Link to='/about'>
                 <p>{"About"}</p>
-            </Link>
-            <Link to='/skills'>
-                <p>{"Skills"}</p>
             </Link>
             <Link to='/projects'>
                 <p>{"Projects"}</p>

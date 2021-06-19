@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import '../component-stylesheets/Project.css';
 
 const ProjectContainer = styled.div`
     background: #f9f9f9ad;
