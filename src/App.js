@@ -4,7 +4,6 @@ import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import NavBar from './components/NavBar';
 import InfoBar from './components/InfoBar';
 import Projects from './components/Projects';
-import Skills from './components/Skills';
 import Landing from './components/Landing';
 import './component-stylesheets/App.css';
 import styled from 'styled-components';
@@ -61,9 +60,6 @@ function App() {
               </Route>
               <Route path='/about'>
                 <InfoBar />
-              </Route>
-              <Route path='/skills'>
-                <Skills />
               </Route>
               <Route path='/projects'>
                 <Projects />
