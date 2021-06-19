@@ -1,5 +1,37 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+const fadeInLeft = keyframes`
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    80% {
+        transform: translateX(20px);
+        opacity: .7;
+    }
+
+    100% {
+        opacity: 1;
+    }
+`;
+
+const fadeInRight = keyframes`
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    80% {
+        transform: translateX(-20px);
+        opacity: .7;
+    }
+
+    100% {
+        opacity: 1;
+    }
+`;
 
 const LandingContainer = styled.div`
     background: #11111399;
@@ -24,12 +56,20 @@ const Introduction = styled.div`
     }
 `;
 
+const Name = styled.h3`
+    animation: 1s ${fadeInLeft} ease-in;
+`;
+
+const Title = styled.h1`
+    animation: 1s ${fadeInRight} ease-in;
+`;
+
 const Landing = () => {
     return (
         <LandingContainer>
             <Introduction>
-                <h3>Hi, I'm Aaron!</h3>
-                <h1>Full Stack Web Developer, React, Ruby on Rails, NodeJS</h1>
+                <Name>Hi, I'm Aaron!</Name>
+                <Title>Full Stack Web Developer, React, Ruby on Rails, NodeJS</Title>
             </Introduction>
         </LandingContainer>
     );
