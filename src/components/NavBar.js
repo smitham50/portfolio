@@ -1,10 +1,25 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../component-stylesheets/NavBar.css';
+import styled from 'styled-components';
+
+const Nav = styled.nav`
+    display: flex;
+    background: #11111399;
+    justify-content: space-around;
+    height: 6rem;
+    padding: 1rem;
+
+    & a:-webkit-any-link {
+        color: white;
+        text-decoration: none;
+        font-size: 1.4rem;
+        transition: .3s;
+    }
+`;
 
 const NavBar = () => {
     return (
-        <nav className="navbar">
+        <Nav>
             <Link to='/about'>
                 <p>{"About"}</p>
             </Link>
@@ -14,7 +29,7 @@ const NavBar = () => {
             <Link to='/projects'>
                 <p>{"Projects"}</p>
             </Link>
-        </nav>
+        </Nav>
     );
 };
 
