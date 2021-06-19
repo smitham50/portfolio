@@ -7,17 +7,13 @@ import Projects from './components/Projects';
 import Landing from './components/Landing';
 import './component-stylesheets/App.css';
 import styled from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 const AppContainer = styled.div`
   body {
     margin: 0;
     padding: 0;
     font-family: "Roboto Mono", monospace;
-  }
-
-  main {
-    display: flex;
-    flex-direction: column;
   }
 
   ul {
@@ -39,6 +35,11 @@ const AppContainer = styled.div`
   }
 `;
 
+const Main = styled.main`
+  display: flex;
+  flex-direction: column;
+`;
+
 function App() {
   const location = useLocation();
 
@@ -47,7 +48,7 @@ function App() {
       <header>
         <NavBar />
       </header>
-      <main>
+      <Main>
         <TransitionGroup>
           <CSSTransition
             timeout={250}
@@ -67,7 +68,7 @@ function App() {
             </Switch>
           </CSSTransition>
         </TransitionGroup>
-      </main>
+      </Main>
     </AppContainer>
   );
 }
