@@ -2,7 +2,6 @@ import React from 'react';
 import About from './About';
 import Contact from './Contact';
 import styled from 'styled-components';
-import '../component-stylesheets/InfoBar.css';
 
 const InfoContainer = styled.div`
     padding: 1rem;

@@ -1,9 +1,8 @@
 import React from 'react';
 import Project from './Project';
 import projectInfo from '../utils/projectInfo';
-import '../component-stylesheets/Projects.css';
 
-const Projects = (props) => {
+const Projects = () => {
 
     const renderProjects = () => {
         return projectInfo.map((project, idx) => {
