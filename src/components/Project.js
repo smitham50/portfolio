@@ -80,6 +80,10 @@ const Description = styled.p`
     margin-bottom: 2rem;
 `;
 
+const BuiltWith = styled.p`
+    text-decoration: underline;
+`;
+
 const ProjectLink = styled.a`
     margin: .5rem;
 `;
@@ -106,40 +110,40 @@ const Project = (props) => {
         folderIcon
     } = props;
 
+    const { PUBLIC_URL } = process.env;
+
     const renderListItems = () => {
         return builtWith.map(listItem => {
-            return <ListItem>{listItem}</ListItem>
+            return <ListItem>{ listItem }</ListItem>
         });
     }
 
     return (
         <ProjectContainer>
-            <h1>{name}</h1>
+            <h1>{ name }</h1>
             <ProjectBody>
                 <ProjectImageContainer>
                     {
                         image2
-                        ?  
-                        <>  
-                            <ProjectImage src={process.env.PUBLIC_URL + image} alt="" />
-                            <ProjectImage src={process.env.PUBLIC_URL + image2} alt="" />
-                        </>
-                        :
-                        <ProjectImage src={process.env.PUBLIC_URL + image}  alt="" />
+                        ?   <>  
+                                <ProjectImage src={ PUBLIC_URL + image } alt="" />
+                                <ProjectImage src={ PUBLIC_URL + image2 } alt="" />
+                            </>
+                        :   <ProjectImage src={ PUBLIC_URL + image }  alt="" />
                     }
                 </ProjectImageContainer>
                 <ProjectInfo>
-                    <Description>{description}</Description>
-                    <p style={{textDecoration: "underline"}}>Built with</p>
+                    <Description>{ description }</Description>
+                    <BuiltWith>Built with</BuiltWith>
                     <List>
                         { renderListItems() }
                     </List>
-                    <ProjectLink href={repo}>
-                        <ProjectLinkIcon src={process.env.PUBLIC_URL + gitHubIcon} alt="" />
+                    <ProjectLink href={ repo }>
+                        <ProjectLinkIcon src={ PUBLIC_URL + gitHubIcon } alt="" />
                     </ProjectLink>
                     {
-                        url &&  <ProjectLink href={url}>
-                                    <ProjectLinkIcon src={process.env.PUBLIC_URL + folderIcon} alt="" />
+                        url &&  <ProjectLink href={ url }>
+                                    <ProjectLinkIcon src={ PUBLIC_URL + folderIcon } alt="" />
                                 </ProjectLink>
                     }
                 </ProjectInfo>
