@@ -8,8 +8,8 @@ const fadeInLeft = keyframes`
     }
 
     80% {
-        transform: translateX(20px);
-        opacity: .7;
+        transform: translateX(35px);
+        opacity: .5;
     }
 
     100% {
@@ -24,8 +24,8 @@ const fadeInRight = keyframes`
     }
 
     80% {
-        transform: translateX(-20px);
-        opacity: .7;
+        transform: translateX(-35px);
+        opacity: .5;
     }
 
     100% {
