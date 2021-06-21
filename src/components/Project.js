@@ -101,8 +101,7 @@ const Project = (props) => {
     const {
         builtWith,
         name,
-        image,
-        image2,
+        images,
         description,
         repo,
         url,
@@ -118,18 +117,19 @@ const Project = (props) => {
         });
     }
 
+    const renderImages = () => {
+        return images.map(image => {
+            return <ProjectImage src={ PUBLIC_URL + image } alt="" />
+        })
+    }
+
     return (
         <ProjectContainer>
             <h1>{ name }</h1>
             <ProjectBody>
                 <ProjectImageContainer>
                     {
-                        image2
-                        ?   <>  
-                                <ProjectImage src={ PUBLIC_URL + image } alt="" />
-                                <ProjectImage src={ PUBLIC_URL + image2 } alt="" />
-                            </>
-                        :   <ProjectImage src={ PUBLIC_URL + image }  alt="" />
+                        renderImages()
                     }
                 </ProjectImageContainer>
                 <ProjectInfo>

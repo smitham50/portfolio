@@ -8,8 +8,7 @@ const Projects = () => {
         return projectInfo.map((project, idx) => {
             const {
                 name,
-                image,
-                image2,
+                images,
                 description,
                 repo,
                 builtWith,
@@ -20,8 +19,7 @@ const Projects = () => {
                 <Project
                     key={idx}
                     name={name}
-                    image={image}
-                    image2={image2}
+                    images={images}
                     description={description}
                     repo={repo}
                     builtWith={builtWith}
@@ -34,8 +32,8 @@ const Projects = () => {
     }
 
     return (
-        <div className="projects">
-            {renderProjects()}
+        <div>
+            { renderProjects() }
         </div>
     );
 }

@@ -20,10 +20,10 @@ const NavBar = () => {
     return (
         <Nav>
             <Link to='/about'>
-                <p>{"About"}</p>
+                <p>About</p>
             </Link>
             <Link to='/projects'>
-                <p>{"Projects"}</p>
+                <p>Projects</p>
             </Link>
         </Nav>
     );

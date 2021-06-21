@@ -2,8 +2,9 @@ const projectInfo = [
     {
         dominion: {
             name: "Dominion",
-            image: "dominion.png",
-            image2: "",
+            images: [
+                "dominion.png"
+            ],
             description: "Pass and play deckbuilding card game",
             repo: "https://github.com/smitham50/dominion-frontend",
             url: "https://smitham50.github.io/dominion-frontend/",
@@ -21,8 +22,10 @@ const projectInfo = [
     {
         trailblaze: {
             name: "Trailblaze",
-            image: "trailblaze.png",
-            image2: "trailblaze2.png",
+            images: [
+                "trailblaze.png",
+                "trailblaze2.png",
+            ],
             description: "Trail finding web application",
             repo: "https://github.com/smitham50/trailblaze-frontend",
             url: "https://smitham50.github.io/trailblaze-frontend/",
@@ -44,8 +47,9 @@ const projectInfo = [
     {
         spellingBee: {
             name: "Spelling Bee",
-            image: "spellingbee.png",
-            image2: "",
+            images: [
+                "spellingbee.png"
+            ],
             description: "Clone of the New York Times' popular wordgame",
             repo: "https://github.com/smitham50/spelling_bee",
             url: "https://smitham50.github.io/spelling_bee/",
@@ -60,8 +64,10 @@ const projectInfo = [
     {
         yelpCamp: {
             name: "YelpCamp",
-            image: "yelpcamp.png",
-            image2: "yelpcamp2.png",
+            images: [
+                "yelpcamp.png",
+                "yelpcamp2.png"
+            ],
             description: "Final project from Colt Steele's Web Developer Bootcamp",
             repo: "https://github.com/smitham50/YelpCamp",
             url: "https://infinite-earth-91751.herokuapp.com/",
@@ -83,8 +89,9 @@ const projectInfo = [
     {
         wuht: {
             name: "wuht",
-            image: "wuht2.png",
-            image2: "",
+            images: [
+                "wuht2.png"
+            ],
             description: "NPM package that enables you to search MDN JavaScript keyword documentation in the command line. Install: npm i wuht -g",
             repo: "https://github.com/smitham50/wuht",
             url: "",
