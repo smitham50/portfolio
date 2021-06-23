@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import styled from 'styled-components';
+import Fade from "react-reveal/Fade";
 
 const ProjectContainer = styled.div`
     background: #f9f9f9ad;
@@ -106,49 +107,55 @@ const Project = (props) => {
         repo,
         url,
         gitHubIcon,
-        folderIcon
+        folderIcon,
+        fade
     } = props;
 
     const { PUBLIC_URL } = process.env;
 
     const renderListItems = () => {
-        return builtWith.map(listItem => {
-            return <ListItem>{ listItem }</ListItem>
+        return builtWith.map((listItem, idx) => {
+            return <ListItem key={idx}>{ listItem }</ListItem>
         });
     }
 
     const renderImages = () => {
-        return images.map(image => {
-            return <ProjectImage src={ PUBLIC_URL + image } alt="" />
+        return images.map((image, idx) => {
+            return <ProjectImage key={ idx } src={ PUBLIC_URL + image } alt="" />
         })
     }
 
     return (
-        <ProjectContainer>
-            <h1>{ name }</h1>
-            <ProjectBody>
-                <ProjectImageContainer>
-                    {
-                        renderImages()
-                    }
-                </ProjectImageContainer>
-                <ProjectInfo>
-                    <Description>{ description }</Description>
-                    <BuiltWith>Built with</BuiltWith>
-                    <List>
-                        { renderListItems() }
-                    </List>
-                    <ProjectLink href={ repo }>
-                        <ProjectLinkIcon src={ PUBLIC_URL + gitHubIcon } alt="" />
-                    </ProjectLink>
-                    {
-                        url &&  <ProjectLink href={ url }>
-                                    <ProjectLinkIcon src={ PUBLIC_URL + folderIcon } alt="" />
-                                </ProjectLink>
-                    }
-                </ProjectInfo>
-            </ProjectBody>
-        </ProjectContainer>
+        <Fade 
+            left={fade === 'left' ? true : false} 
+            right={fade === 'right' ? true : false}
+        > 
+            <ProjectContainer>
+                <h1>{ name }</h1>
+                <ProjectBody>
+                    <ProjectImageContainer>
+                        {
+                            renderImages()
+                        }
+                    </ProjectImageContainer>
+                    <ProjectInfo>
+                        <Description>{ description }</Description>
+                        <BuiltWith>Built with</BuiltWith>
+                        <List>
+                            { renderListItems() }
+                        </List>
+                        <ProjectLink href={ repo }>
+                            <ProjectLinkIcon src={ PUBLIC_URL + gitHubIcon } alt="" />
+                        </ProjectLink>
+                        {
+                            url &&  <ProjectLink href={ url }>
+                                        <ProjectLinkIcon src={ PUBLIC_URL + folderIcon } alt="" />
+                                    </ProjectLink>
+                        }
+                    </ProjectInfo>
+                </ProjectBody>
+            </ProjectContainer>
+        </Fade>
     );
 }
 

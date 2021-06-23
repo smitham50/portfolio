@@ -26,6 +26,7 @@ const Projects = () => {
                     url={url}
                     gitHubIcon={idx % 2 === 0 ? "icons8-github.svg" : "icons8-github (1).svg"}
                     folderIcon={idx % 2 === 0 ? "icons8-folder.svg" : "icons8-folder (1).svg"}
+                    fade={idx % 2 === 0 ? 'left' : 'right'}
                 />
             )
         });
