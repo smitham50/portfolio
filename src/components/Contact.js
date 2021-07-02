@@ -5,7 +5,7 @@ const ContactContainer = styled.div`
     width: auto;
     margin: 1rem;
     color: #3f3e42;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1000px) {
         width: auto;
         text-align: center;
     }
@@ -14,6 +14,9 @@ const ContactContainer = styled.div`
 const Portrait = styled.img`
     width: 100%;
     border-radius: 20px;
+    @media screen and (max-width: 1000px) {
+        width: 50%;
+    }
 `;
 
 const ContactLink = styled.a`
