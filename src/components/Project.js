@@ -25,7 +25,7 @@ const ProjectBody = styled.div`
         margin: 2rem;
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1000px) {
         flex-direction: column;
         padding: 0;
     }
@@ -37,7 +37,7 @@ const ProjectImageContainer = styled.div`
     justify-content: space-around;
     width: 60%;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1000px) {
         margin: 0;
         width: auto;
     }
@@ -48,7 +48,7 @@ const ProjectImage = styled.img`
     border-radius: 10px;
     margin: 1rem;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1000px) {
         width: auto;
         max-width: 100%;
         height: auto;
@@ -61,7 +61,7 @@ const ProjectInfo = styled.div`
     background: #cccccc14;
     border-radius: 10px;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1000px) {
         margin: 0;
         width: auto;
     }
