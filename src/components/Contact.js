@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const ContactContainer = styled.div`
-    width: auto;
+    width: 79%;
     margin: 1rem;
     color: #3f3e42;
     @media screen and (max-width: 1000px) {
@@ -20,8 +20,9 @@ const Portrait = styled.img`
 `;
 
 const ContactLink = styled.a`
-    margin: 0 0.15rem;
     width: 2rem;
+    margin: 0 0.28rem;
+    
 `;
 
 const ContactIcon = styled.img`

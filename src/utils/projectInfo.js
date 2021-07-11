@@ -12,6 +12,7 @@ const projectInfo = [
                 "React",
                 "Ruby on Rails",
                 "CSS",
+                "Styled Components",
                 "Redux",
                 "React Hooks",
                 "PostgreSQL",
@@ -36,11 +37,32 @@ const projectInfo = [
                 "React Hooks",
                 "PostgreSQL",
                 "Google Maps API",
+                "Google Directions API",
                 "Hiking Project API",
                 "Heroku/GH Pages",
                 "Bootstrap",
                 "CSS",
+                "Styled Components",
                 "React Hook Form"
+            ]
+        }
+    },
+    {
+        trailblazeNative: {
+            name: "Trailblaze Native",
+            images: [
+                "trailblaze-native.png"
+            ],
+            description: "Native trail finding mobile application for iOS and Android",
+            repo: "https://github.com/smitham50/trailblaze-native",
+            url: "",
+            builtWith: [
+                "React Native",
+                "Hiking Project API",
+                "Redux",
+                "React Hooks",
+                "Google Maps API",
+                "Google Directions API"
             ]
         }
     },

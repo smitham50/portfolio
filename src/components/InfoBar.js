@@ -9,7 +9,7 @@ const InfoContainer = styled.div`
     background: #f9f9f9ad;
     border-radius: 10px;
     display: flex;
-    height: 80vh;
+    height: 78vh;
     @media screen and (max-width: 1000px) {
         flex-direction: column;
         padding: 0;
