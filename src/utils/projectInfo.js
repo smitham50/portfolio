@@ -53,7 +53,7 @@ const projectInfo = [
             images: [
                 "trailblaze-native.png"
             ],
-            description: "Native trail finding mobile application for iOS and Android",
+            description: "Native trail finding application for iOS and Android",
             repo: "https://github.com/smitham50/trailblaze-native",
             url: "",
             builtWith: [
