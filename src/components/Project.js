@@ -64,6 +64,7 @@ const ProjectInfo = styled.div`
     @media screen and (max-width: 1000px) {
         margin: 0;
         width: auto;
+        padding: 2rem 0;
     }
 `;
 
@@ -86,6 +87,7 @@ const BuiltWith = styled.p`
 
 const ProjectLink = styled.a`
     margin: .5rem;
+    position: relative;
 `;
 
 const ProjectLinkIcon = styled.img`
@@ -96,6 +98,16 @@ const ProjectLinkIcon = styled.img`
         transform: scale(1.1);
     }
 `;
+
+const ProjectLinkText = styled.div`
+    font-size: .5rem;
+    position: absolute;
+    left: .05rem;
+    right: .05rem;
+    text-decoration: none;
+    color: #3f3e42;
+`;
+
 
 const Project = (props) => {
     const {
@@ -140,10 +152,12 @@ const Project = (props) => {
                     </List>
                     <ProjectLink href={ repo }>
                         <ProjectLinkIcon src={ PUBLIC_URL + gitHubIcon } alt="" />
+                        <ProjectLinkText>Repo</ProjectLinkText>
                     </ProjectLink>
                     {
                         url &&  <ProjectLink href={ url }>
                                     <ProjectLinkIcon src={ PUBLIC_URL + folderIcon } alt="" />
+                                    <ProjectLinkText>Launch</ProjectLinkText>
                                 </ProjectLink>
                     }
                 </ProjectInfo>
