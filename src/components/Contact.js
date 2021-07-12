@@ -14,6 +14,8 @@ const ContactContainer = styled.div`
 const Portrait = styled.img`
     width: 100%;
     border-radius: 20px;
+    box-shadow: 0 .75rem 2rem rgba(0, 0, 0, .2);
+
     @media screen and (max-width: 1000px) {
         width: 50%;
     }
@@ -29,7 +31,7 @@ const ContactIcon = styled.img`
     transition: 300ms;
 
     &:hover {
-        transform: scale(1.1);
+        transform: scale(1.1) translateY(-.1rem);
     }
 `;
 
