@@ -10,10 +10,16 @@ const AboutContainer = styled.div`
     padding-bottom: 4rem;
     margin: 1rem;
     color: #3f3e42;
+    line-height: 1.4rem;
 
     @media screen and (max-width: 1000px) {
         padding-bottom: 1rem;
+        line-height: 1.8rem;
     }
+`;
+
+const Heading = styled.h1`
+    letter-spacing: .1rem;
 `;
 
 const P = styled.p`
@@ -25,9 +31,9 @@ const About = () => {
 
     return (
         <AboutContainer ref={aboutRef}>
-            <h1>
+            <Heading>
                 About
-            </h1>
+            </Heading>
             <P>My route to becoming a programmer was an indirect one. My interests growing up were largely creative, and I studied music and literature in college but neither had a clear career path. For several years I tried different jobs and industries on for size. I taught English in Ukraine, worked in Washington, DC as a coffee roaster, and eventually moved back to Brooklyn where I started working at the food co-op my parents and some friends started in 1976.</P>
             <P>The co-op was my first workplace that had ample room for advancement and opportunities to connect with a larger industry. I moved from stocker, to buyer, department manager, and finally office administrator. For several years I grew tremendously and was truly proud of the changes my colleagues and I were able to implement, but I eventually felt I was learning less on a daily basis and started to imagine career paths where growth would be a constant.</P>
             <P>I started programming as a hobby and it didn't take me long to realize I'd found what I was looking for. I was managing the co-op's database in Microsoft Access at the time, and it was probably the first I'd ever thought about how databases are structured, what they even are, and, oh yeah, how do computers and the internet work?</P>
