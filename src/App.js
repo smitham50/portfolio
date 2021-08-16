@@ -5,12 +5,7 @@ import NavBar from './components/NavBar';
 import InfoBar from './components/InfoBar';
 import Projects from './components/Projects';
 import Landing from './components/Landing';
-import styled from 'styled-components';
-
-const Main = styled.main`
-  display: flex;
-  flex-direction: column;
-`;
+import { Main } from './styled/AppStyled';
 
 function App() {
   const location = useLocation();
