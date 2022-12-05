@@ -57,12 +57,12 @@ const Project = (props) => {
             <ProjectLinkIcon src={ PUBLIC_URL + gitHubIcon } alt="" />
             <ProjectLinkText>Repo</ProjectLinkText>
           </ProjectLink>
-          {
+          {/* {
             url &&  <ProjectLink href={ url }>
                   <ProjectLinkIcon src={ PUBLIC_URL + folderIcon } alt="" />
                   <ProjectLinkText>Launch</ProjectLinkText>
                 </ProjectLink>
-          }
+          } */}
         </ProjectInfo>
       </ProjectBody>
     </ProjectContainer>
