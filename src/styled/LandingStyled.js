@@ -35,7 +35,7 @@ const fadeInRight = keyframes`
 export const LandingContainer = styled.div`
   background: #11111399;
   color: white;
-  height: 87vh;
+  height: 89vh;
   position: relative;
 `;
 
